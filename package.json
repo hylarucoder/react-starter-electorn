@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "concurrently \"wsrun -x totalfinder-electron start\" \"wsrun -x totalfinder-web start\""
+  },
+  "devDependencies": {
+    "@types/node": "15.6.1",
+    "lerna": "^4.0.0",
+    "rimraf": "3.0.2",
+    "wsrun": "^5.2.4",
+    "concurrently": "^6.2.0"
+  }
+}
